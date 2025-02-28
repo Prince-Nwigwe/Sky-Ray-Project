@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prices.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <title>Buy Now</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="sky_ray.html"><img id="img" src="logo.jpg" alt=""></a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="prices.html">Buy Now</a></li>
+        <li><a href="info.html">Contact Us</a></li>
+    </ul>
+</nav>
+    <section id="pricing">
+        <h2>Choose Your Package</h2>
+        <div class="price-card">
+          <div><img class="bord_rad" height="300px" width="400px" src="basic.jpg" alt=""></div>
+          <h3>Basic</h3>
+          <p>$199</p>
+          <button id="purchase1">Buy Now</button>
+        </div>
+        <div class="price-card">
+          <div><img class="bord_rad" height="300px" width="400px" src="pro.jpg" alt=""></div>
+          <h3>Pro</h3>
+          <p>$299</p>
+          <button id="purchase2">Buy Now</button>
+        </div>
+      </section>
+      <div id="success" style="font-family: cursive; height: 10px;"></div>
+      <br><br><br><br><br><footer>&copy; Sky Ray 2025 ltd</footer>
+
+      <script>
+        document.getElementById("purchase1").onclick = success
+        document.getElementById("purchase2").onclick = success
+
+        function success() {
+            document.getElementById("success").innerHTML = `You have successfully purchased this package. Thank you for choosing us. Do leave us a feedback in the Contact Us page`
+        }
+      </script>
+</body>
+</html>
